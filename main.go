@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("Fake Go Modules"))
+	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("Velodyne"))
 }
 
 func mainWithArgs(ctx context.Context, args []string, logger logging.Logger) (err error) {
