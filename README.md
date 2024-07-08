@@ -17,9 +17,9 @@ Edit and fill in the attributes as applicable.
 
 ```json
 {
- "componenets": [
-
-     "name": "<your-camera-name>",
+ "components": [
+ {
+  "name": "<your-camera-name>",
   "model": "rand:velodyne-go-module:vlp-16",
   "type": "camera",
   "namespace": "rdk",
@@ -27,6 +27,7 @@ Edit and fill in the attributes as applicable.
       "port": <int>,
       "ttl_ms": <int>,
   }
+ }
 ],
   "modules": [
     {

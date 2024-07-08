@@ -16,7 +16,7 @@ velodyne-go-module: *.go
 
 setup:
 	if [ "$(UNAME_S)" = "Linux" ]; then \
-		sudo apt install -y libjpeg-dev pkg-config; \
+		sudo apt install -y pkg-config; \
 	fi
 
 clean:
