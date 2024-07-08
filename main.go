@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("Velodyne"))
+	utils.ContextualMain(mainWithArgs, module.NewLoggerFromArgs("velodyne-go-module"))
 }
 
 func mainWithArgs(ctx context.Context, args []string, logger logging.Logger) (err error) {
@@ -29,7 +29,7 @@ func mainWithArgs(ctx context.Context, args []string, logger logging.Logger) (er
 
 	// Each module runs as its own process
 	err = mod.Start(ctx)
-	logger.Warn("starting module")
+	logger.Warn("starting velodyne-go-module")
 	defer mod.Close(ctx)
 	if err != nil {
 		return err
