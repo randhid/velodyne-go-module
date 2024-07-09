@@ -1,9 +1,9 @@
 
 # Velodyne Module
 
-the `velodyne` module implements the [vlp-16 Velodyne Puck](https://ouster.com/products/hardware/vlp-16) as a modular viam camera component that implements point clouds using an unofficial golang implementation found at go.einride.tech/vlp16.
-The velodyne must be running locally at address `127.0.0.1`.
-The only supported model is the `vlp-16`, which is the only model implmented by this repo.
+the `velodyne` module implements the [vlp-16 Velodyne Puck](https://ouster.com/products/hardware/vlp-16) as a modular viam camera component that implements point clouds using an unofficial golang implementation found at `go.einride.tech/vlp16`.
+The Velodyne must be running locally at address `127.0.0.1`.
+The only supported model is the `vlp-16`, which is the only model implemented by this repo.
 
 ## Configure a velodyne-go-module:vlp-16 Camera"
 
