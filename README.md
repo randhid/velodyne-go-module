@@ -1,7 +1,7 @@
 
 # Velodyne Module
 
-the `velodyne` module implements the [vlp-16 Velodyne Puck](https://ouster.com/products/hardware/vlp-16) as a camera that implements point clouds.
+the `velodyne` module implements the [vlp-16 Velodyne Puck](https://ouster.com/products/hardware/vlp-16) as a camera that implements point clouds using an unofficial golang implementation found at go.einride.tech/vlp16.
 The velodyne must be running locally at address `127.0.0.1`.
 The only supported model is the `vlp-16`, which is the only model implmented by this repo.
 
@@ -17,9 +17,9 @@ Edit and fill in the attributes as applicable.
 
 ```json
 {
- "componenets": [
-
-     "name": "<your-camera-name>",
+ "components": [
+ {
+  "name": "<your-camera-name>",
   "model": "rand:velodyne-go-module:vlp-16",
   "type": "camera",
   "namespace": "rdk",
@@ -27,6 +27,7 @@ Edit and fill in the attributes as applicable.
       "port": <int>,
       "ttl_ms": <int>,
   }
+ }
 ],
   "modules": [
     {

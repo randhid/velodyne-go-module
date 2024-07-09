@@ -26,3 +26,4 @@ go.work.sum
 
 # velodyne-go-module
 velodyne-go-module
+bin/
