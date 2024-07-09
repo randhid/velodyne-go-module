@@ -1,5 +1,5 @@
 {
-  "module_id": "rand:velodyne",
+  "module_id": "rand:velodyne-go-module",
   "visibility": "public",
   "url": "github.com/randhid/velodyne-go-module",
   "description": "golang driver for vlp-16 vvelodyne LiDAR from Ouster based on a golang implementation from go.einride.tech/vlp16",
@@ -9,5 +9,5 @@
       "model": "rand:velodyne-go-module:vlp-16"
     }
   ],
-  "entrypoint": "velodyne-go-module"
+  "entrypoint": "bin/velodyne-go-module"
 }
