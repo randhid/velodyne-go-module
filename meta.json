@@ -5,7 +5,7 @@
   "description": "golang driver for vlp-16 vvelodyne LiDAR from Ouster based on a golang implementation from go.einride.tech/vlp16",
   "models": [
     {
-      "api": "rdk:components:camera",
+      "api": "rdk:component:camera",
       "model": "rand:velodyne-go-module:vlp-16"
     }
   ],
