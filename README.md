@@ -5,40 +5,24 @@ the `velodyne` module implements the [vlp-16 Velodyne Puck](https://ouster.com/p
 The Velodyne must be running locally at address `127.0.0.1`.
 The only supported model is the `vlp-16`, which is the only model implemented by this repo.
 
-## Configure a velodyne-go-module:vlp-16 Camera"
+## Configure a velodyne-go-module:vlp-16 Camera
 
 Navigate to the **CONFIGURE** tab of your machine's page in [the Viam app](https://app.viam.com).
 Click the **+** icon next to your machine part in the left-hand menu and select **Component**.
 Select the `camera` type, then select the `rand:velodyne-go-module:vlp-16` model.
 Enter a name or use the suggested name for your camera and click **Create**.
 
-Edit and fill in the attributes as applicable.
-## JSON Template" %}}
+On the new component panel, copy and paste the following attribute template into your camera’s attributes field:
 
 ```json
 {
- "components": [
- {
-  "name": "<your-camera-name>",
-  "model": "rand:velodyne-go-module:vlp-16",
-  "type": "camera",
-  "namespace": "rdk",
-  "attributes": {
-      "port": <int>,
-      "ttl_ms": <int>,
-  }
- }
-],
-  "modules": [
-    {
-      "type": "registry",
-      "name": "module_name",
-      "module_id": "rand:velodyne-go-module",
-      "version": "x.y.z"
-    }
-  ],
+    "port": <int>,
+    "ttl_ms": <int>
 }
 ```
+
+> [!NOTE]
+> For more information, see [Configure a Machine](/build/configure/).
 
 ## Attributes
 The following attributes are available for `vlp-16` cameras:
